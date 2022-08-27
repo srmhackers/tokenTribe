@@ -14,6 +14,30 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
+        <div className="front">
+          <div className="frontpage">
+            <div className="introtext">
+              <ul>Redeem your</ul>
+              <ul>DAO Tokens</ul>
+              <div className="subheading">
+                Perform Tasks, Earn Rewards and Redeem with Merch or Tickets!
+              </div>
+              <div className="button">Visit Marketplace</div>
+            </div>
+            <div className="imghe">
+              <img src="https://firebasestorage.googleapis.com/v0/b/logpro-f2137.appspot.com/o/1.png?alt=media&token=2b17acaa-947c-4851-a55c-306d0d5ee56c" />
+            </div>
+          </div>
+          <div className="rear">
+            <div className="re">
+              <ul>Making your community </ul>
+              <ul>active is now easier with</ul>
+              <ul>XXXXXXXXX</ul>
+            </div>
+            <div className="button2">Create your token</div>
+          </div>
+        </div>
+
         {/* <h1 className={styles.title}>
           Welcome to <a href="">RainbowKit</a> + <a href="">wagmi</a> +{" "}
           <a href="https://nextjs.org">Next.js!</a>
