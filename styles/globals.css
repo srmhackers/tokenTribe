@@ -430,7 +430,7 @@ dd dl .term {
 .grad {
   margin: 2rem;
   padding: 2rem 1rem;
-  width: 40%;
+  width: 50vw;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -442,8 +442,9 @@ dd dl .term {
   display: flex;
 }
 .top_span1 {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Manrope", sans-serif;
   font-size: 12px;
   color: white;
@@ -451,17 +452,19 @@ dd dl .term {
 .dollar {
   display: flex;
   border: 3px solid #e43fc7;
+  align-items: center;
   border-radius: 50px;
   background: black;
+  justify-content: center;
   width: 200px;
-  margin: 0px;
 }
 .text_input1 {
   margin: 0px;
   color: white;
-  border: solid black;
   padding: 15px;
-  background: black;
+  background: transparent;
+  border: none;
+  outline: none;
   width: 100px;
   font-size: 15px;
   font-family: "Manrope", sans-serif;
@@ -469,8 +472,7 @@ dd dl .term {
 #dollar_pic {
   height: 30px;
   width: 20px;
-  padding-top: 10px;
-  margin-right: 10px;
+  margin-right: 5px;
   border-radius: 50px;
   margin-left: 15px;
 }
@@ -495,8 +497,11 @@ dd dl .term {
 }
 
 #m_text_input {
-  width: 40%;
-  height: 40px;
+  width: 60%;
+  height: 10rem;
+  border-radius: 2rem !important;
+  font-size: 3rem;
+  text-align: center;
 }
 
 #l_text_input {
@@ -507,11 +512,12 @@ dd dl .term {
   background-color: black;
   display: flex;
   color: white;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 10px;
   padding-right: 120px;
-  width: 400px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3rem;
+  padding: 0 3rem;
   border-radius: 40px;
   border: 3px solid #e43fc7;
 }
@@ -519,7 +525,7 @@ dd dl .term {
 .text_sahi {
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 27px;
+  font-size: 1.5rem;
   margin-top: auto;
   margin-bottom: auto;
 }
