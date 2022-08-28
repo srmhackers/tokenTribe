@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function Tokenomics() {
+  const [tokenCode, setTokenCode] = useState("");
+  const [tokenSupply, setTokenSupply] = useState("");
   return (
     <div class="grad">
       <form className="formm">
@@ -11,7 +15,12 @@ function Tokenomics() {
             <h2>Enter your Token Code</h2>
             <div class="dollar">
               <img id="dollar_pic" src="./pic.png" alt="" />
-              <input className="text_input1" type="text" name="" />
+              <input
+                className="text_input1"
+                type="text"
+                value={tokenCode}
+                onChange={(e) => setTokenCode(e.target.value)}
+              />
             </div>
           </div>
         </div>
@@ -19,14 +28,21 @@ function Tokenomics() {
         <center>
           <div className="middle_feilds">
             <h2>Enter Supply amount of the Token.</h2>
-            <input className="text_input " id="m_text_input" type="text" />
+            <input
+              className="text_input "
+              value={tokenSupply}
+              onChange={(e) => setTokenSupply(e.target.value)}
+              id="m_text_input"
+              type="number"
+            />
           </div>
         </center>
 
         <center>
           <div className="last_feild">
-            <span className="text_sahi">12345</span>
-            <span className="text_sahi">#CodeToken</span>
+            <span className="text_sahi">{tokenSupply || "xxxxx"}</span>
+            <span className="text_sahi">#</span>
+            <span className="text_sahi">{tokenCode || "CodeToken"}</span>
             <h1>=</h1>
             <img id="polygon" src="./polygon.png" alt="" />
             <span class="text_sahi"> 123.45</span>
