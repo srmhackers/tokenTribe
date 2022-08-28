@@ -1,6 +1,5 @@
-import { ConnectButton } from "@rainbow-me/rainbowkit"
-import Link from "next/link"
-import NextLink from "next/link"
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import Link from "next/link";
 function Header() {
   return (
     <header>
@@ -21,7 +20,7 @@ function Header() {
         <ConnectButton showBalance={false} />
       </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

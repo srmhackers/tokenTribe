@@ -59,12 +59,12 @@ a {
 
 .footer {
   display: flex;
-  flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
   justify-content: center;
+  border-top: 1px solid #eaeaea;
   align-items: center;
   color: white;
+  z-index: 100;
 }
 
 .footer a {
@@ -426,16 +426,14 @@ dd dl .term {
 }
 
 .grad {
-  height: 600px;
+  margin: 2rem;
+  padding: 2rem 1rem;
   width: 40%;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(to bottom, #86127e 0%, #5001a3 100%);
   border-radius: 50px;
-}
-.formm {
-  padding: 20px;
 }
 
 .top_feilds {
@@ -557,32 +555,6 @@ dd dl .term {
   width: 40px;
 }
 
-.grad {
-  height: 480px;
-  width: 45%;
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  background: linear-gradient(to bottom, #86127e 0%, #5001a3 100%);
-  border-radius: 50px;
-}
-.input-feild {
-  background: black;
-  color: white;
-  border: 3px solid purple;
-  padding: 15px;
-  border-radius: 50px;
-  width: 90%;
-  font-weight: bold;
-  font-size: 15px;
-  font-family: "Manrope", sans-serif;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.formm {
-  padding: 30px;
-}
 h2 {
   margin-left: 20px;
   margin-right: 20px;
@@ -603,13 +575,12 @@ h2 {
   font-weight: bold;
   font-size: 20px;
   font-family: "Manrope", sans-serif;
-  margin-top: 23px;
   text-align: center;
+  cursor: pointer;
+  z-index: 1000;
 }
 
-#test {
-  height: 100px;
-}
+
 
 .upper {
   color: white;
@@ -659,7 +630,7 @@ h2 {
   font-size: 24px;
   color: white;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-family: "Manrope", sans-serif;
 }
 

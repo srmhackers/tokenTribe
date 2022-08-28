@@ -1,14 +1,22 @@
 function DAO() {
   return (
     <div className="grad">
-      <form className="formm" action="index.html" method="post">
+      <form className="formm">
         <h2>Enter DAO / Protocol / Community Name</h2>
-        <input className="input-feild" type="text" name="" value="" />
+        <input className="input-feild" type="text" name="" />
         <h2>
-          Describe more about your DAO / Protocol / Community ? <br />( Add
-          Relevant Links )
+          <span style={{ fontSize: "1rem" }}>
+            Describe more about your DAO / Protocol / Community ?
+          </span>{" "}
+          <br />
+          <span style={{ fontSize: ".9rem" }}>( Add Relevant Links )</span>
         </h2>
-        <input className="input-feild" id="test" type="text" name="" value="" />
+        <input
+          style={{ height: 90 }}
+          className="input-feild"
+          id="test"
+          type="text"
+        />
         <br />
         <center>
           <input
@@ -20,6 +28,6 @@ function DAO() {
         </center>
       </form>
     </div>
-  )
+  );
 }
-export default DAO
+export default DAO;
