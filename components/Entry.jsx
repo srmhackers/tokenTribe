@@ -11,7 +11,9 @@ function Entry(props) {
             <span className="emoji" role="img" aria-label="Tense Biceps">
               {props.emoji}
             </span>
-            <span>{props.name}</span>
+            <span style={{ overflow: "hidden", whiteSpace: "nowrap" }}>
+              {props.name}
+            </span>
           </dt>
           <dd style={{ color: "white", marginTop: "1rem" }}>
             <button className="submit_button">Buy Now</button>

@@ -579,6 +579,11 @@ h2 {
   cursor: pointer;
 }
 
+.submit_button:hover {
+  transform: scale(1.1);
+  transition-timing-function: ease-out;
+  transition-duration: .2s;
+}
 
 
 .upper {
