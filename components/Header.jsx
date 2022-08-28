@@ -6,7 +6,7 @@ function Header() {
       <h1>
         <Link href="/">TokenTribe</Link>
       </h1>
-      <Link href="/create" className="head1">
+      <Link href="/dao" className="head1">
         Create Token
       </Link>
       <Link href="/shop" className="head2">

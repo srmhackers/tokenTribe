@@ -25,6 +25,6 @@ function Ticket() {
         </div>
       </center>
     </div>
-  )
+  );
 }
-export default Ticket
+export default Ticket;

@@ -20,9 +20,12 @@ function DAO() {
         <br />
         <center>
           <input
+            onClick={(e) => {
+              e.preventDefault();
+              location.href = "/tokens";
+            }}
             className="submit_button"
             type="submit"
-            name=""
             value="Continue"
           />
         </center>

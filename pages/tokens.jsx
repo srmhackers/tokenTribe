@@ -1,8 +1,10 @@
+import Router from "next/router";
 import { useState } from "react";
 
 function Tokenomics() {
   const [tokenCode, setTokenCode] = useState("");
   const [tokenSupply, setTokenSupply] = useState("");
+  const [buttonText, setButtonText] = useState("Mint Now");
   return (
     <div class="grad">
       <form className="formm">
@@ -51,7 +53,16 @@ function Tokenomics() {
         </center>
 
         <center>
-          <button className="submit_button">Mint Now</button>
+          <button
+            className="submit_button"
+            onClick={(e) => {
+              e.preventDefault();
+              setButtonText("Minting in Process");
+              setInterval(() => (location.href = "/minted"), 5000);
+            }}
+          >
+            {buttonText}
+          </button>
         </center>
       </form>
     </div>

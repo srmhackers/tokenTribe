@@ -22,7 +22,11 @@ function Navbar({ menuState, setMenuState }) {
       <button
         style={menuState === "tickets" ? { backgroundColor: "#5D0951" } : {}}
         className="n"
-        onClick={() => setMenuState("tickets")}
+        onClick={(e) => {
+          setMenuState("tickets");
+          e.preventDefault();
+          location.href = "/ticket";
+        }}
       >
         NFT tickets
       </button>

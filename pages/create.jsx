@@ -1,39 +1,40 @@
-const { ethers } = require("ethers")
-import { useState, useEffect } from "react"
-import { useAccount, useConnect, useDisconnect } from "wagmi"
-import { contractAddress, abi } from "../constants.js"
+const { ethers } = require("ethers");
+import { useState, useEffect } from "react";
+import { useAccount, useConnect, useDisconnect } from "wagmi";
+import { contractAddress, abi } from "../constants.js";
 // require("dotenv").config()
 
-const provider = new ethers.providers.AlchemyProvider("maticmum")
+const provider = new ethers.providers.AlchemyProvider("maticmum");
 // const signer = provider.getSigner()
 // const contract = new ethers.Contract(contractAddress, abi, signer)
 // console.log(contract.provider)
 
 function Create() {
-  const { address, isConnected } = useAccount()
+  const { address, isConnected } = useAccount();
 
-  const [price, setPrice] = useState(0)
-  const [pay, setPay] = useState(0)
+  const [price, setPrice] = useState(0);
+  const [pay, setPay] = useState(0);
   useEffect(() => {
-    // e.preventDefault()
     fetch(
       "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=MATIC&CMC_PRO_API_KEY=37950996-17b7-4681-8bc5-ef44cc37aaa9&convert=INR"
     )
       .then((response) => response.json())
       .then((data) => {
-        setPrice(data.data.MATIC.quote.INR.price)
+        setPrice(data.data.MATIC.quote.INR.price);
       })
-  })
+      .catch(console.error);
+  });
 
   function changeHandler(e) {
-    setPay((e.target.value * 1) / price)
-    console.log(address)
+    setPay((e.target.value * 1) / price);
+    console.log(address);
   }
 
   async function clickHandler(e) {
-    e.preventDefault()
-    const txn = await contract.mint(price)
-    txn.wait()
+    e.preventDefault();
+
+    // const txn = await contract.mint(price);
+    // txn.wait();
   }
 
   return (
@@ -49,7 +50,7 @@ function Create() {
       <br />
       <button onClick={clickHandler}>Mint Now</button>
     </form>
-  )
+  );
 }
 
-export default Create
+export default Create;
