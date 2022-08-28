@@ -1,7 +1,7 @@
-import React from "react"
-import Entry from "../components/Entry"
-import emojipedia from "../emojipedia"
-import Navbar from "../components/Navbar"
+import React, { useState } from "react";
+import Entry from "../components/Entry";
+import emojipedia from "../emojipedia";
+import Navbar from "../components/Navbar";
 
 //1. Extract the repeated parts of the App into a Entry component.
 //2. Use props to make the Entry component render different data.
@@ -19,27 +19,31 @@ import Navbar from "../components/Navbar"
 //     "“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym."
 // }
 
-function createEntry(emojiTerm) {
-  return (
-    <Entry
-      key={emojiTerm.id}
-      emoji={emojiTerm.imgURL}
-      name={emojiTerm.name}
-      description={emojiTerm.meaning}
-    />
-  )
-}
-
 function App() {
+  const [menuState, setMenuState] = useState("merches");
   return (
-    <>
-      {/* <h1>
-        <span>emojipedia</span>
-      </h1> */}
-      <Navbar />
-      <dl className="dictionary">{emojipedia.map(createEntry)}</dl>
-    </>
-  )
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
+      <Navbar menuState={menuState} setMenuState={setMenuState} />
+      <dl className="dictionary">
+        {emojipedia.map((emojiTerm) => (
+          <Entry
+            key={emojiTerm.id}
+            emoji={emojiTerm.imgURL}
+            name={emojiTerm.name}
+            description={emojiTerm.meaning}
+            img={emojiTerm.image}
+          />
+        ))}
+      </dl>
+    </div>
+  );
 }
 
-export default App
+export default App;

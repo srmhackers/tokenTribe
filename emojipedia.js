@@ -3,57 +3,74 @@ const emojipedia = [
     id: 1,
     emoji: "💪",
     name: "Woman in crypto",
-    meaning: ""
+    image: "image7.png",
+    meaning:
+      "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you.",
   },
   {
     id: 2,
     emoji: "🙏",
     name: "Web3 Things",
+    image: "image8.png",
     meaning:
-      "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you."
+      "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you.",
   },
   {
     id: 3,
     emoji: "🤣",
     name: "Ethereum shirt",
-    meaning: ""
+    image: "image9.png",
+    meaning:
+      "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you.",
   },
   {
     id: 4,
     emoji: "🤓",
     name: "Buidl",
-    meaning: ""
+    image: "image10.png",
+    meaning:
+      "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you.",
   },
   {
     id: 5,
     emoji: "🤣",
     name: "Cryto",
-    meaning: ""
+    image: "image11.png",
+    meaning:
+      "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you.",
   },
   {
     id: 6,
     emoji: "🤣",
     name: "LFG",
-    meaning: ""
+    image: "image12.png",
+    meaning:
+      "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you.",
   },
   {
     id: 7,
     emoji: "🤣",
     name: "WAGMI",
-    meaning: ""
+    image: "image13.png",
+    meaning:
+      "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you.",
   },
   {
     id: 8,
     emoji: "🤣",
     name: "Metaverse",
-    meaning: ""
+    image: "image13.png",
+    meaning:
+      "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you.",
   },
   {
     id: 9,
     emoji: "🤣",
     name: "Just hold it",
-    meaning: ""
-  }
+    image: "image13.png",
+    meaning:
+      "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you.",
+  },
 ];
 
 export default emojipedia;
