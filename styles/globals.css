@@ -571,15 +571,12 @@ h2 {
   background: black;
   color: white;
   border: 3px solid purple;
-  padding: 15px;
-  border-radius: 50px;
-  width: 25%;
+  padding: .5rem 1rem;
+  border-radius: 2rem;
   font-weight: bold;
-  font-size: 20px;
   font-family: "Manrope", sans-serif;
   text-align: center;
   cursor: pointer;
-  z-index: 1000;
 }
 
 

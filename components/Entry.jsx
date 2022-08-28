@@ -14,7 +14,7 @@ function Entry(props) {
             <span>{props.name}</span>
           </dt>
           <dd style={{ color: "white", marginTop: "1rem" }}>
-            {props.description}
+            <button className="submit_button">Buy Now</button>
           </dd>
         </div>
       </div>
