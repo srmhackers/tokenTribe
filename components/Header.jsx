@@ -5,12 +5,12 @@ function Header() {
   return (
     <header>
       <h1>
-        <Link href="/">XXXXXXX</Link>
+        <Link href="/">TokenTribe</Link>
       </h1>
       <Link href="/create" className="head1">
         Create Token
       </Link>
-      <Link href="" className="head2">
+      <Link href="/shop" className="head2">
         Market Place
       </Link>
       <Link href="" className="head2">

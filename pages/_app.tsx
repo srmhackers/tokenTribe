@@ -7,6 +7,7 @@ import { alchemyProvider } from "wagmi/providers/alchemy"
 import { publicProvider } from "wagmi/providers/public"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import { useAccount, useConnect, useDisconnect } from "wagmi"
 
 const { chains, provider, webSocketProvider } = configureChains(
   [chain.polygonMumbai],

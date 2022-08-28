@@ -32,7 +32,7 @@ const Home: NextPage = () => {
             <div className="re">
               <ul>Making your community </ul>
               <ul>active is now easier with</ul>
-              <ul>XXXXXXXXX</ul>
+              <ul>TokenTribe</ul>
             </div>
             <div className="button2">Create your token</div>
           </div>
